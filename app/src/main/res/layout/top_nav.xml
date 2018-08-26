@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// References:
+// https://sourceforge.net/p/wifi-direct-file-transfer-app/code/ci/feature/change-start-transfer-data/~/tree/
+// https://github.com/YaphetS1/WiFi-Direct-File-Transfer-App
+// https://developer.android.com/guide/topics/connectivity/wifip2p
+// https://developer.android.com/training/connect-devices-wirelessly/nsd-wifi-direct
+// http://www.drjukka.com/blog/wordpress/?p=95
+// http://www.drjukka.com/blog/wordpress/?p=81
+// https://medium.com/@436910463q/sending-files-between-devices-has-never-been-easer-wifi-direct-open-source-8337a54e8497
+-->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <TextView
+        android:id="@+id/tvTopNavTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/r_m"
+        android:text="@string/app_main_title"
+        android:textColor="@color/cWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/swEnableWifiDirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
